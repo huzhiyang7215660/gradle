@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+import build.futureKotlin
 import org.gradle.gradlebuild.unittestandcompile.ModuleType
 
 plugins {
@@ -32,6 +33,8 @@ dependencies {
     implementation(project(":distributionsDependencies"))
 
     implementation(project(":kotlinDsl"))
+    implementation(futureKotlin("stdlib-jdk8"))
+    implementation(project(":kotlinCompilerEmbeddable"))
 
     implementation(project(":plugins"))
     implementation(project(":pluginDevelopment"))
