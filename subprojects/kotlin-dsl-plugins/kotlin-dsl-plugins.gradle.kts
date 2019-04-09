@@ -48,8 +48,8 @@ sourceSets.main {
 }
 
 dependencies {
-    compileOnly(project(":kotlinDsl"))
-    compileOnly(project(":pluginDevelopment"))
+    implementation(project(":kotlinDsl"))
+    implementation(project(":pluginDevelopment"))
 
     implementation(futureKotlin("stdlib-jdk8"))
     implementation(futureKotlin("gradle-plugin"))

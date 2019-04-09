@@ -31,9 +31,9 @@ dependencies {
 
     api(project(":distributionsDependencies"))
 
-    compile(project(":kotlinDsl"))
+    implementation(project(":kotlinDsl"))
 
-    compileOnly(project(":plugins"))
+    implementation(project(":plugins"))
 
     testImplementation(project(":kotlinDslTestFixtures"))
 
